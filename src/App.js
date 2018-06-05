@@ -4,15 +4,16 @@ import './App.css';
 
 class App extends Component {
   render() {
+    var helloWorld = 'A variável fica fora do return, more';
+    var user = {
+      'name': 'La',
+      'lastName': 'Lalalala'
+    }
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h2>{helloWorld}</h2>
+        <p>My name is {user.name} {user.lastName}</p>
       </div>
     );
   }
