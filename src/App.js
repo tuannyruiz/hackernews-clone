@@ -23,17 +23,11 @@ const list = [
 
 class App extends Component {
   render() {
-    var helloWorld = 'A variável fica fora do return, more';
-    var user = {
-      'name': 'La',
-      'lastName': 'Lalalala'
-    }
-
     return (
       <div className="App">
         {list.map(function(item) {
           return (
-            <div>
+            <div key={item.objectID}>
               <span>
                 <a href={item.url}>{item.title}</a>
               </span>
